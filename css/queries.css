@@ -1,0 +1,25 @@
+/* ********************************************/
+/* below 550px : for mobile*/
+/* ********************************************/
+@media screen and (max-width: 35em) {
+  /* image background */
+  body::before {
+    content: "";
+
+    background-image: var(--background-image-mobile);
+
+    min-height: 40rem;
+  }
+  .container {
+    padding: 4rem 2rem;
+  }
+  .list-settings {
+    justify-content: center;
+  }
+  .items-left {
+    display: none;
+  }
+  .clear-all-completed {
+    display: none;
+  }
+}

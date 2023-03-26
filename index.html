@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css links -->
+    <!-- stylying  links -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- media queris links -->
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <h1>TODO</h1>
+
+          <img
+            src="images/icon-moon.svg"
+            alt="a toggle btween moon and sun iconst"
+            class="theme-toggle"
+          />
+        </header>
+
+        <form class="task-in">
+          <input
+            type="submit"
+            class="task-submit"
+            name="task-submit"
+            value=""
+          />
+          <input
+            type="text"
+            class="task-input"
+            name="task-input"
+            placeholder="create a new todo..."
+          />
+        </form>
+
+        <div class="list">
+          <ul class="draggable-list">
+            <!-- <li class="draggable">
+              <div class="draggable-container" draggable="true">
+                <label for="check" class="task-checkbox-container">
+                  <input
+                    type="checkbox"
+                    id="check"
+                    class="task-checkbox"
+                  />
+
+                  <div class="task-checkbox-style"></div>
+                </label>
+
+                <p class="task-text">hello worldsd!</p>
+
+                <a href="#" class="task-delete"
+                  ><img src="images/icon-cross.svg" alt="calose icon"
+                /></a>
+              </div>
+            </li> -->
+          </ul>
+
+          <div class="list-settings">
+            <p class="items-left">0 items left</p>
+
+            <div class="settings">
+              <a href="#" class="setting settings-active show-all"
+                >All</a
+              >
+              <a href="#" class="setting show-avtive">Active</a>
+              <a href="#" class="setting show-completed">Completed</a>
+            </div>
+
+            <a href="#" class="clear-all-completed"
+              >Clear Completed</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- cennecting js files -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
